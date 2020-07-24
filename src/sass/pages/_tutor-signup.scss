@@ -1,0 +1,26 @@
+.tutor-signup {
+	@include hero;
+	background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url(https://firebasestorage.googleapis.com/v0/b/tutor-5e5ec.appspot.com/o/website_files%2FAdobeStock_359026328-min.jpeg?alt=media&token=06793d1a-affc-4fa8-a9b0-8d1503592386) no-repeat center top; 
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height:100vh;
+  &__box {
+  	min-height:100vh;
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		width:100%;
+		justify-content: center;
+		.item {
+			padding:2rem;
+			margin:1rem 2rem;
+			flex-grow: 1;
+			min-width: 300px;
+			max-width: 480px;
+			text-align: center;
+		}
+ 	}
+}

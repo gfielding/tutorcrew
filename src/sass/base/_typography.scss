@@ -1,0 +1,69 @@
+/**TYPOGRAPHY**/
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size:1rem;
+}
+
+html {
+	font-size:62.5% !important;
+}
+body {
+	box-sizing: border-box;
+	color: $text;
+}
+.caption {
+	font-size:$smallText;
+}
+.bold {
+	font-weight:bold;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+hr {
+	opacity: 0.4;
+}
+label {
+	font-weight: bold;
+}
+.success {
+	color: green;
+}
+.error {
+	color: red;
+}
+
+a {
+  cursor: pointer;
+  color:$primary;
+  text-decoration: none;
+  &.disabled {
+  	cursor:none;
+  }
+  *.btn {
+    color:$text;
+  }
+}
+
+h3, .h3 {
+  font-size: 1.8rem !important;
+  text-transform: uppercase !important;
+  font-weight: bold !important;
+}
+
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $textLight;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: $textLight;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: $textLight;
+}

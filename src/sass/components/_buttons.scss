@@ -1,0 +1,20 @@
+/**BUTTONS**/
+
+.btn, .btn:link, .btn:visited {
+	@include button;
+	&.btn__large {
+		padding: 0.8rem 1.8rem;
+		font-size: 1.4rem;
+	}
+	&.btn__primary {
+		color:white;
+		background-color: $primary;
+		&:hover {
+			background-color: $primaryDark;
+			box-shadow:none;
+		}
+	}
+}
+.btn:hover {
+	box-shadow: 0 .2rem 1rem rgba(0,0,0,.2);
+}

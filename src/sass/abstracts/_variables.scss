@@ -1,0 +1,28 @@
+/*VARIABLES*/
+$text: #777;
+$textLight: lighten($text, 20%);
+$textDark: darken($text, 20%);
+$background: #f5f5f5;
+$primary: #065379;
+$primaryDark: darken($primary, 20%);
+$primaryLight: lighten($primary, 20%);
+$secondary: #192659;
+$seconradyDark: darken($secondary, 20%);
+$seconradyLight: lighten($secondary, 20%);
+$accent: #E91E63;
+$accentDark: darken($accent, 20%);
+$accentLight: lighten($accent, 20%);
+
+$success: green;
+$error: red;
+
+/**PADDING**/
+$spacing: 2rem;
+
+$letter-spacing: 0.12rem;
+
+/*BORDER RADIUS*/
+$radius: .6rem;
+
+/*FONTS*/
+$smallText: 1rem;

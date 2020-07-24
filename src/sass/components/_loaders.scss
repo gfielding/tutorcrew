@@ -1,0 +1,17 @@
+/**LOADERS**/
+
+
+.btn.loader {
+  border: .2rem solid #fff;
+  border-radius: 50%;
+  border-top: .2rem solid transparent;
+  width: 1;
+  margin: .3rem 0 .3rem 1rem;
+  height: 1;
+  -webkit-animation: spin 1.4s linear infinite; /* Safari */
+  animation: spin 1.4s linear infinite;
+}
+.btn__large.loader {
+	width: 1.8rem;
+	height: 1.8rem;
+}

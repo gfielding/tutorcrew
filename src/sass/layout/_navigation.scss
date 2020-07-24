@@ -1,0 +1,23 @@
+.nav {
+	position: absolute;
+	width:calc(100% - 4rem);
+	top: 0;
+	left: 0;
+	z-index: 1;
+	height: 5rem;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding:0.5rem 2rem;
+	img {
+		height: 4rem;
+	}
+	.btn {
+		background-color: transparent;
+		&:hover {
+			background-color: $background;
+			box-shadow: none;
+		}
+	}
+}

@@ -1,0 +1,17 @@
+/**CARD**/
+
+.card {
+  background:white;
+  padding:1rem;
+  border-radius: $radius;
+  margin-bottom:$spacing;
+  color:$text;
+  box-shadow: .25rem .25rem 1rem rgba(0,0,0,0.2);
+  &__title {
+  	padding:1rem;
+  }
+  &__text {
+  	text-align:left;
+  	padding: 0 1rem 1rem 1rem;
+  }
+}

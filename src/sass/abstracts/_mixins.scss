@@ -1,0 +1,23 @@
+/**MIXINS**/
+
+@mixin hero {
+  display:flex;
+  align-items:center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding: 1rem;
+	min-height: 60vh;
+}
+
+@mixin button {
+	text-transform: uppercase;
+	background-color: white;
+  border-radius: $radius;
+  letter-spacing: $letter-spacing;
+  border: .1rem solid inherit;
+  padding: .6rem 1.2rem;
+  font-size:1.2rem;
+  transition: all .3s;
+	display:inline-block;
+	color:inherit;
+}

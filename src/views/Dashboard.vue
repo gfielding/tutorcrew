@@ -1,5 +1,5 @@
 <template> 
-  <div> 
+  <div class="page"> 
     <h1>Signup succeeded</h1> 
     
     <hr> 
@@ -9,7 +9,7 @@
     <p>{{currentUser.userId}}</p> 
     <hr> 
     <pre>{{currentUser}}</pre> 
-    <button @click="logout">Log out</button> 
+    <button class="btn" @click="logout">Log out</button> 
   </div>
 </template>
 

@@ -1,17 +1,20 @@
 /*VARIABLES*/
-$text: #777;
+$text: #4d4d4d;
 $textLight: lighten($text, 20%);
 $textDark: darken($text, 20%);
-$background: #f5f5f5;
-$primary: #065379;
+$greyAccent: #d5d4d0;
+$greyAccentLight: lighten($greyAccent, 20%);
+$background: #fff;
+$primary: #283d74;
 $primaryDark: darken($primary, 20%);
-$primaryLight: lighten($primary, 20%);
-$secondary: #192659;
-$seconradyDark: darken($secondary, 20%);
-$seconradyLight: lighten($secondary, 20%);
-$accent: #E91E63;
+$primaryLight: #4f5181;
+$secondary: #ef8a60;
+$secondaryDark: darken($secondary, 20%);
+$secondarLight: lighten($secondary, 20%);
+$accent: #f8ca7f;
 $accentDark: darken($accent, 20%);
 $accentLight: lighten($accent, 20%);
+$accent2: #f6df8f;
 
 $success: green;
 $error: red;

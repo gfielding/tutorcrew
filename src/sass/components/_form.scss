@@ -1,6 +1,6 @@
 .form {
 	&__group:not(:last-child) {
-		margin-bottom: 1.6rem;
+		margin-bottom: 0.5rem;
 	}
 
 	&__input {
@@ -10,14 +10,14 @@
 		background-color: $background;
 		border-radius: 0;
 		border:none;
-		border-bottom: 3px solid transparent;
+		border-bottom: 3px solid white;
 		width:100%;
 		display: block;
-
+		margin-top: 0.25rem;
 		&:focus {
 			outline:none;
 			box-shadow: 1 1rem 2rem rgba(0,0,0,0.1);
-			border-bottom: 3px solid $primary;
+			border-bottom: 3px solid $success;
 		}
 
 		&:focus:invalid {
@@ -30,10 +30,33 @@
 
 	}
 
+	.btn {
+		background-color: transparent;
+		border: 1px solid;
+		border-color: white;
+		font-weight: 600;
+		display: inline-block !important;
+		&:hover {
+			background-color: $accentDark;
+			border-color: $accentDark;
+		}
+		&__primary {
+			background-color: $primary;
+			border-color: $primary;
+			display: inline-flex !important;
+	    align-items: center;
+	    justify-content: space-between;
+	    margin: inherit !important;
+			&:hover {
+				background-color: $primaryDark;
+				border-color: $primaryDark;
+			}
+		}
+	}
+
 	&__label {
 		font-size: 1.2rem;
 		font-weight: 600;
-		margin-left:2rem;
 		margin-top:0.5rem;
 		display: block;
 		transition: all .3s;

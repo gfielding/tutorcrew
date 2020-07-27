@@ -1,19 +1,39 @@
 .home {
+	background-color: white;
 	&__hero {
 		@include hero;
 		color: white;
-		background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(https://firebasestorage.googleapis.com/v0/b/tutor-5e5ec.appspot.com/o/website_files%2Fstudent-min.jpg?alt=media&token=b18da736-d72b-46da-b700-f237d1e470e8) no-repeat center center; 
-		-webkit-background-size: cover;
-	  -moz-background-size: cover;
-	  -o-background-size: cover;
-	  background-size: cover;
-	  min-height:100vh;
+		background: linear-gradient(to right bottom,  $primaryDark, $primary);
+    position: relative;
+    .card {
+    	background-color: transparent;
+    	box-shadow: none;
+    	color:white;
+    	a {
+    		color:white;
+    	}
+    }
 		.item {
-			padding:2rem;
-			margin:1rem 2rem;
+			margin:1rem;
+			@include respond(phone) {
+		    margin:1rem 0;
+		  }
 			flex-grow: 1;
 			min-width: 240px;
+			text-align: center;
+			.btn {
+				display: block;
+				margin: auto;
+				transition: 0.2s ease all;
+				&:hover {
+				}
+			}
 		}
+	}
+	&__more {
+		padding:1rem;
+		background: $greyAccentLight;
+		min-height:100vh;
 	}
 	&__video {
 		min-height:100vh;
@@ -49,10 +69,8 @@
 					display: block;
 					margin: auto;
 					margin-bottom:2rem;
-					transform: translateY(0.2rem);
 					transition: 0.2s ease all;
 					&:hover {
-						transform: translateY(0);
 					}
 				}
 			}

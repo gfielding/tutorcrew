@@ -6,18 +6,18 @@ import AOS from "aos"
 import "aos/dist/aos.css"
 import VueScrollTo from 'vue-scrollto'
 import Unicon from 'vue-unicons'
-import { uniConstructor, uniCarWash, uniAngleDown } from 'vue-unicons/src/icons'
+import { uniFacebook, uniArrowLeft, uniAngleDown } from 'vue-unicons/src/icons'
 import './sass/main.scss'
 const fb = require('./firebaseConfig.js')
 
-Unicon.add([uniConstructor, uniCarWash, uniAngleDown])
+Unicon.add([uniFacebook, uniArrowLeft, uniAngleDown])
 Vue.use(Unicon, {
-  height: 32,
-  width: 32
+  height: 24,
+  width: 24
 })
 
 Vue.use(VueScrollTo, {
-   duration: 300,
+   duration: 400,
    easing: "ease",
    offset: 0,
    force: true,
@@ -69,5 +69,8 @@ fb.auth.onAuthStateChanged(user => {
     	},
       render: h => h(App)
     })
+  }
+  if (user) {
+    store.dispatch('fetchUserProfile', user)
   }
 })

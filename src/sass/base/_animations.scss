@@ -1,3 +1,15 @@
+/*Transitions*/
+.fade-enter {
+	opacity:0;
+}
+.fade-leave-active,
+.fade-enter-active {
+	transition: opacity 0.2s ease-out;
+}
+.fade-leave-to {
+  opacity: 0;
+}
+
 /** ANIMATIONS **/
 
 @-webkit-keyframes spin {

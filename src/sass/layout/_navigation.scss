@@ -5,16 +5,18 @@
 	left: 0;
 	z-index: 1;
 	height: 5rem;
-	background-color: white;
+	background-color: $primaryDark;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	padding:0.5rem 2rem;
+	color: white;
 	img {
 		height: 4rem;
 	}
 	.btn {
 		background-color: transparent;
+		color: white;
 		&:hover {
 			background-color: $background;
 			box-shadow: none;

@@ -22,6 +22,12 @@
 	color:inherit;
 }
 
+@mixin page {
+	background:$background;
+	min-height:calc(100vh - 6rem);
+	padding:2rem;
+}
+
 @mixin respond ($breakpoint) {
 	@if $breakpoint == phone {
 		@media (max-width: 37.5em) { @content }; //600px

@@ -2,7 +2,7 @@
   <div class="home">
     <div class="home__hero">
     	<div class="item">
-				<h1>Tutorama</h1>
+				<h1>Tutor Crew</h1>
   		</div>
   		<div class="item flex justify-center flex-column">
   			<Auth />
@@ -22,6 +22,13 @@ export default {
   name: 'Home',
   computed: {
     ...mapState(['currentUser', 'userProfile']),
+  },
+  async mounted () {
+    if (this.currentUser) {
+        this.$router.push('/dashboard')
+    }
+    else {
+    }
   },
   components: {
   	Nav,

@@ -66,7 +66,7 @@ export default {
   	currentUser (value) {
   		if (value) {
   			console.log(value)
-  			this.$router.replace('/dashboard')
+  			this.$router.push('/dashboard')
   		}
   	}
   },

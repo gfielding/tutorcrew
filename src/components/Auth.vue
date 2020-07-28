@@ -19,7 +19,7 @@
               <label for="password" class="form__label">Password</label>
             </div>
             <div class="flex align-center justify-space-between pt-3 pb-5">
-              <button class="btn btn__large btn__primary" @click.stop="onSigninFacebook()"><span class="mr-2">Continue with Facebook</span> <unicon name="facebook" fill="white" height="24" /></button>
+              <button class="btn btn__large btn__primary" @click.prevent="onSigninFacebook()"><span class="mr-2">Continue<span class="hiddenXsOnly"> with Facebook</span></span> <unicon name="facebook" fill="white" height="24" /></button>
               <div class="ml-3">
                 <button class="btn btn__large" @click="login()">Log In</button>
               </div>
@@ -44,6 +44,7 @@
               <input class="form__input" v-model.trim="signupForm.name" type="text" placeholder="First & Last Name" id="name" required/>
               <label class="form__label" for="name">First & Last Name</label>
             </div>
+
             <div class="form__group">
               <input class="form__input" v-model.trim="signupForm.email" type="email" placeholder="Email" id="email2" required/>
               <label class="form__label" for="email2">Email</label>
@@ -62,7 +63,7 @@
             </transition>
 
             <div class="flex align-center justify-space-between pt-3 pb-5">
-              <button class="btn btn__large btn__primary" @click.stop="onSigninFacebook()"><span class="mr-2">Continue with Facebook</span> <unicon name="facebook" fill="white" height="24" /></button>
+              <button class="btn btn__large btn__primary" @click.prevent="onSigninFacebook()"><span class="mr-2">Continue<span class="hiddenXsOnly"> with Facebook</span></span> <unicon name="facebook" fill="white" height="24" /></button>
               <div class="ml-3">
                 <button class="btn btn__large" @click="signup()">Sign Up</button>
               </div>
@@ -110,14 +111,6 @@ export default {
   
   computed: {
     ...mapState(['currentUser', 'userProfile', 'fbError', 'loginError']),
-  },
-  watch: {
-  	currentUser (value) {
-  		if (value) {
-  			console.log(value)
-  			this.$router.push('/dashboard')
-  		}
-  	}
   },
   components: {
   	Nav,

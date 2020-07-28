@@ -52,6 +52,13 @@ export const store = new Vuex.Store({
         }
       })
     },**/
+    logout({ commit, state }) {
+      fb.auth.signOut().then(() => {
+        store.dispatch('clearData')
+      }).catch(err => {
+        console.log(err)
+      })
+    },
     signUserUp({ commit }, payload) {
       fb.auth.createUserWithEmailAndPassword(payload.email, payload.password).then(UserCredential => {
       	console.log(UserCredential.user.uid)
@@ -106,8 +113,6 @@ export const store = new Vuex.Store({
       commit('setLoginError', null)
       commit('setFbError', null)
       commit('setUserProfile', {})
-
-      loginError
     },
   },
   mutations: {
